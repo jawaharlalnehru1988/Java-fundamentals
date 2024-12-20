@@ -32,6 +32,6 @@ public class ObjectChallenges {
         System.out.println(averageAge   );
         //Stream with lambda expression
         double averageAgeStrem = ObjectChallenges.calculateAveAgeStream(people);
-        System.out.println(averageAgeStrem );
+        System.out.println(averageAgeStrem);
     }
 }
