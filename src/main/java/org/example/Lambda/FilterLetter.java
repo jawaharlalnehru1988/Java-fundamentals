@@ -4,10 +4,10 @@ import java.util.stream.Collectors;
 
 public class FilterLetter {
     public static void main(String[] args) {
-//        List<String> names = Arrays.asList("Hari", "Krishna", "mukunda", "murari", "jagannath", "Achyuth", "Anantha", "Adhi");
+        List<String> names = Arrays.asList("Hari", "Krishna", "mukunda", "murari", "jagannath", "Achyuth", "Anantha", "Adhi");
 //
-//        List<String> filteredNames = names.stream().filter(name -> name.startsWith("A")).collect(Collectors.toList());
-//        System.out.println(filteredNames);
+        List<String> filteredNames = names.stream().filter(name -> name.startsWith("A")).collect(Collectors.toList());
+        System.out.println(filteredNames);
 
 //        List<Person> people = Arrays.asList(
 //                new Person("Ram", 73),
@@ -58,25 +58,32 @@ public class FilterLetter {
 //        System.out.println(word);
 
 //        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 2, 5, 6, 3, 7, 8);
+//        List<Integer> distinctNumbers = numbers.stream().distinct().collect(Collectors.toList());
+//        System.out.println(distinctNumbers);
+//        //sort the distinct numbers
 
-        List<Person> people = Arrays.asList(
-                new Person("Radhanath", 16),
-                new Person("Gopinath", 18),
-                new Person("Tulasi Das", 16),
-                new Person("Maruthi", 18)
-        );
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+        List<Integer> sortedNumbers = numbers.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+        System.out.println(sortedNumbers);
 
-        int totalAge = 0;
-
-        for(Person person: people){
-            totalAge += person.getAge();
-        }
-
-        if(people.isEmpty()){
-            System.out.println( "no value are there");
-        } else {
-            System.out.println( (double) totalAge/ people.size());
-        }
+//        List<Person> people = Arrays.asList(
+//                new Person("Radhanath", 16),
+//                new Person("Gopinath", 18),
+//                new Person("Tulasi Das", 16),
+//                new Person("Maruthi", 18)
+//        );
+//
+//        int totalAge = 0;
+//
+//        for(Person person: people){
+//            totalAge += person.getAge();
+//        }
+//
+//        if(people.isEmpty()){
+//            System.out.println( "no value are there");
+//        } else {
+//            System.out.println( (double) totalAge/ people.size());
+//        }
 
     }
 }
