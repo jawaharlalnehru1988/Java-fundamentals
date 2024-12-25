@@ -13,5 +13,16 @@ public class Student {
         System.out.println("Name: " + this.name + ", Roll Number: " + this.rollNumber);
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", rollNumber=" + rollNumber +
+                '}';
+    }
 
+
+    public String getName() {
+        return name;
+    }
 }
