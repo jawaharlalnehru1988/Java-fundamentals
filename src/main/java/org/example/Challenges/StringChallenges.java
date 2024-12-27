@@ -128,7 +128,24 @@ public class StringChallenges {
         return result.toString();
     }
 
-
+    // 9. write a function that takes two strings as input and returns true if they are anagrams of each other
+ public static boolean areAnagrams(String str1, String str2) {
+     if (str1 == null || str2 == null) return false;
+     if (str1.length() != str2.length()) return false;
+     int[] freq = new int[26];
+     for (char ch : str1.toCharArray()) {
+         freq[ch - 'a']++;
+     }
+     for (char ch : str2.toCharArray()) {
+         freq[ch - 'a']--;
+     }
+     for (int num : freq) {
+         if (num != 0) {
+             return false;
+         }
+     }
+     return true;
+ }
 
     public static void main(String[] args) {
         //  Test countVowels

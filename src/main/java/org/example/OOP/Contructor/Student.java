@@ -23,6 +23,8 @@ public class Student {
                 '}';
     }
 
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -37,5 +39,9 @@ public class Student {
     }
     public String getName() {
         return name;
+    }
+
+    public int getRollNumber() {
+        return rollNumber;
     }
 }
