@@ -73,11 +73,31 @@ public class FilterFromArrayChallenges {
         return greaterStudents;
     }
 
+//3. Filter Strings Ending with a Specific Suffix
 
+    public static List<String> filterStringsEndingWith(String[] strings, String suffix){
+        if(strings == null) return null;
+        return Arrays.stream(strings)
+                .filter(s -> s.endsWith(suffix))
+                .collect(Collectors.toList());
+    }
 
+    // method 2: with for loop
+
+    public static List<String> filterStringsEndWith(String[] strings, String suffix){
+        if(strings == null) return null;
+        List<String> endWith = new ArrayList<>();
+        for (String string : strings) {
+            if (string.endsWith(suffix)) {
+                endWith.add(string);
+            }
+        }
+        return endWith;
+    }
 
     public static void main(String[] args) {
-        // Problem: Find all strings with a length greater than a certain value.
+
+        // Problem 1: Find all strings with a length greater than a certain value.
 //        String[] strings = {"apple", "banana", "cat", "dog"};
 //
 //        // Solution
@@ -93,6 +113,7 @@ public class FilterFromArrayChallenges {
 //            }
 //        }
 
+        //--------------------------------------------------------------------------------
 
         // Problem: Find all strings that start with a particular prefix.
 
@@ -109,7 +130,7 @@ public class FilterFromArrayChallenges {
 //            }
 //        }
 
-
+//use cases
 //List<String> result = findStringsGreaterThan(new String[]{"apple", "banana", "cat", "dog"}, 3);
 //        System.out.println(findStringsGreaterThan(new String[]{"apple", "banana", "cat", "dog"}, 3));
 //
@@ -119,15 +140,21 @@ public class FilterFromArrayChallenges {
 //        System.out.println(filterNumbersGreaterThan(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 5));
 //        System.out.println(filterNumbersGreater(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9}, 5));
 
-        Person[] students = {
-               new Person("hari", 20, "developer", "bangalore", 10000),
-                new Person("john", 30, "developer", "bangalore", 20000),
-                new Person("doe", 40, "developer", "bangalore", 30000),
-                new Person("jane", 50, "developer", "bangalore", 40000),
-                new Person("smith", 60, "developer", "bangalore", 50000),
-        };
+//        Person[] students = {
+//               new Person("hari", 20, "developer", "bangalore", 10000),
+//                new Person("john", 30, "developer", "bangalore", 20000),
+//                new Person("doe", 40, "developer", "bangalore", 30000),
+//                new Person("jane", 50, "developer", "bangalore", 40000),
+//                new Person("smith", 60, "developer", "bangalore", 50000),
+//        };
+//
+//        System.out.println(filterStudentsGreaterThan(students, 30));
+//        System.out.println(filterStudentsGreater(students, 30));
+        //--------------------------------------------------------------------------------
 
-        System.out.println(filterStudentsGreaterThan(students, 30));
-        System.out.println(filterStudentsGreater(students, 30));
+        String[] strings = {"apple", "banana", "grape", "pineapple"};
+        System.out.println(filterStringsEndingWith(strings, "e"));
+
+
     }
 }
