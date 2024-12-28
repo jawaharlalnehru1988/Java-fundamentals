@@ -285,14 +285,36 @@ public class ArrayToCollectionConversion {
 
 
         //// Convert fixed size People array to set where name will be the value
+//
+//        Set<String> nameSet = new HashSet<>();
+//
+//        for (Person person : people) {
+//            nameSet.add(person.getName());
+//        }
+//
+//        System.out.println("nameSet: " + nameSet);
 
-        Set<String> nameSet = new HashSet<>();
 
-        for (Person person : people) {
-            nameSet.add(person.getName());
-        }
+//        String[] array = {"apple", "banana", "cherry"};
+//        Set<String> set = new HashSet<>(Arrays.asList(array));
+//
+//        System.out.println(set);
 
-        System.out.println("nameSet: " + nameSet);
+//        String[] array = {"apple", "banana", "cherry"};
+//        Queue<String> queue = new LinkedList<>(Arrays.asList(array));
+//
+//        System.out.println(queue);
+
+//        String[] keys = {"name", "age", "city"};
+//        String[] values = {"Alice", "25", "New York"};
+//
+//        Map<String, String> map = new HashMap<>();
+//        for (int i = 0; i < keys.length; i++) {
+//            map.put(keys[i], values[i]);
+//        }
+//
+//        System.out.println(map);
+
 
 
     }
