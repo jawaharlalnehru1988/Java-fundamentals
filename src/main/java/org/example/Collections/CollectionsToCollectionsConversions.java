@@ -41,13 +41,14 @@ public class CollectionsToCollectionsConversions {
 
         // Convert Map to Set
 
-        Map<Integer, String> map = Map.of(1, "apple", 2, "banana", 3, "cat", 4, "dog");
-        Set<Map.Entry<Integer, String>> entrySet = map.entrySet();
-        Set<Integer> keySet = map.keySet();
-        Set<String> valueSet = new HashSet<>(map.values());
-        System.out.println(entrySet);
-        System.out.println(keySet);
-        System.out.println(valueSet);
+//        Map<Integer, String> map = Map.of(1, "apple", 2, "banana", 3, "cat", 4, "dog");
+//        Set<Map.Entry<Integer, String>> entrySet = map.entrySet();
+//        Set<Integer> keySet = map.keySet();
+//        Set<String> valueSet = new HashSet<>(map.values());
+//        System.out.println(entrySet);
+//        System.out.println(keySet);
+//        System.out.println(valueSet);
+
 
 
     }
