@@ -371,7 +371,14 @@ public class ArrayListObj {
 //        System.out.println(numbers.stream().findAny());
 //        System.out.println(students.stream().findAny());
 
+        List<String> relNames = List.of("Alice", "Bob", "Charlie", "Diana");
+
+        Optional<String> anyName = relNames.stream().findAny();
+        anyName.ifPresent(System.out::println);
+
         //stream().findFirst()
+
+        //Always returns the first element in order.
 
 //        System.out.println(names.stream().findFirst());
 //        System.out.println(numbers.stream().findFirst());
@@ -379,20 +386,15 @@ public class ArrayListObj {
 
         //stream().flatMap()
 
-//        List<String> namesList = new ArrayList<>();
-//        namesList.add("Apple");
-//        namesList.add("Banana");
-//        namesList.add("Orange");
+//        List<String> namesList = List.of("ram", "Krishna", "govind");
 //
-//        List<String> namesList2 = new ArrayList<>();
-//        namesList2.add("Cherry");
-//        namesList2.add("Berry");
-//        namesList2.add("Grape");
+//        List<String> namesList2 = List.of("Radhe", "Gopi", "Tulasi");
 //
 //        List<List<String>> namesList3 = new ArrayList<>();
 //        namesList3.add(namesList);
 //        namesList3.add(namesList2);
 //
+//        System.out.println(namesList3);
 //        namesList3.stream().flatMap(Collection::stream).forEach(System.out::println);
 //
         //stream().max()

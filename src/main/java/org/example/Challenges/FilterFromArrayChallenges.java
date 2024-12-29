@@ -54,24 +54,24 @@ public class FilterFromArrayChallenges {
     }
 
     // filter objects greater than a certain value
-    public static List<Person> filterStudentsGreaterThan(Person[] students, int value){
-        if(students == null) return null;
-        return Arrays.stream(students)
-                .filter(student -> student.getAge() > value)
-                .collect(Collectors.toList());
-    }
+//    public static List<Person> filterStudentsGreaterThan(Person[] students, int value){
+//        if(students == null) return null;
+//        return Arrays.stream(students)
+//                .filter(student -> student.getAge() > value)
+//                .collect(Collectors.toList());
+//    }
 
-    // method 2: with for loop
-    public static List<Person> filterStudentsGreater(Person[] students, int value){
-        if(students == null) return null;
-        List<Person> greaterStudents = new ArrayList<>();
-        for (Person student : students) {
-            if (student.getAge() > value) {
-                greaterStudents.add(student);
-            }
-        }
-        return greaterStudents;
-    }
+//    // method 2: with for loop
+//    public static List<Person> filterStudentsGreater(Person[] students, int value){
+//        if(students == null) return null;
+//        List<Person> greaterStudents = new ArrayList<>();
+//        for (Person student : students) {
+//            if (student.getAge() > value) {
+//                greaterStudents.add(student);
+//            }
+//        }
+//        return greaterStudents;
+//    }
 
 //3. Filter Strings Ending with a Specific Suffix
 
