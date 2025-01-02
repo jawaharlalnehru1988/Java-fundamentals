@@ -3,9 +3,51 @@ package org.example.Collections;
 import org.example.OOP.Contructor.Student;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class ArrayBuiltInMethods {
+
+    public static int binarySearch(int[] arr, int target) {
+        int low = 0;
+        int high = arr.length - 1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2; // Avoid overflow
+
+            if (arr[mid] == target) {
+                return mid; // Target found
+            } else if (arr[mid] < target) {
+                low = mid + 1; // Search in the right half
+            } else {
+                high = mid - 1; // Search in the left half
+            }
+        }
+
+        return -1; // Target not found
+    }
+
+    public static boolean isArrayEqual(int[] nums1, int[] nums2){
+        if(nums1 == null && nums2 == null){
+            return true;
+        }
+
+        if(nums1 == null || nums2 == null){
+            return false;
+        }
+
+        if(nums1.length != nums2.length){
+            return false;
+        }
+
+        for (int i = 0; i < nums1.length; i++) {
+            if(nums1[i] != nums2[i]){
+                return false;
+            }
+        }
+
+        return true;
+    }
     public static void main(String[] args) {
 
 //        1. sort(): Sorts the elements of the array in ascending order.
@@ -15,16 +57,56 @@ public class ArrayBuiltInMethods {
 //        Arrays.sort(numbers);
 //        System.out.println(Arrays.toString(numbers));
 
+        // with imperative bubble sort method.
+
+//        for (int i = 0; i < numbers.length -1; i++) {
+//            for (int j = 0; j < numbers.length - 1 -i; j++) {
+//                if(numbers[j] > numbers[j + 1]){
+//                    int temp = numbers[j];
+//                    numbers[j] = numbers[j + 1];
+//                    numbers[j+1] = temp;
+//
+//                }
+//            }
+//        }
+//        System.out.println(Arrays.toString(numbers));
+
         // Sort primitive array double[]
 //        double[] doubleNumbers = {5.5, 1.1, 3.3, 2.2, 4.4};
-//        Arrays.sort(doubleNumbers);
+////        Arrays.sort(doubleNumbers);
+////        System.out.println(Arrays.toString(doubleNumbers));
+//
+//        // using bubble sort
+//        for (int i = 0; i < doubleNumbers.length -1; i++) {
+//            for (int j = 0; j < doubleNumbers.length - 1 -i; j++) {
+//                if(doubleNumbers[j] > doubleNumbers[j + 1]){
+//                    double temp = doubleNumbers[j];
+//                    doubleNumbers[j] = doubleNumbers[j + 1];
+//                    doubleNumbers[j+1] = temp;
+//
+//                }
+//            }
+//        }
+//
 //        System.out.println(Arrays.toString(doubleNumbers));
 
         // Sort primitive array char[]
 //        char[] chars = {'c', 'a', 'e', 'b', 'd'};
 //        Arrays.sort(chars);
 //        System.out.println(Arrays.toString(chars));
-
+//
+//        for (int i = 0; i < chars.length -1; i++) {
+//            for (int j = 0; j < chars.length - 1 -i; j++) {
+//                if(chars[j] > chars[j + 1]){
+//                    char temp = chars[j];
+//                    chars[j] = chars[j + 1];
+//                    chars[j+1] = temp;
+//
+//                }
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(chars));
         //  --------------------------------------------------------------------------------------------
 
         // Sort Object array String[]
@@ -32,12 +114,52 @@ public class ArrayBuiltInMethods {
 //        Arrays.sort(names);
 //        System.out.println(Arrays.toString(names));
 
+//        for (int i = 0; i < names.length - 1; i++) {
+//            for (int j = 0; j < names.length -1 - i; j++) {
+//                if( names[j].compareTo(names[j+1]) > 0){
+//                    String temp = names[j];
+//                    names[j] = names[j+1];
+//                    names[j + 1] = temp;
+//                }
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(names));
+
         // Sort Object array Student[]
-//        Student[] students = {
-//                new Student("John", 1),
-//                new Student("Jane", 2),
-//                new Student("Doe", 3)
-//        };
+        Student[] students = {
+                new Student("John", 3),
+                new Student("Jane", 2),
+                new Student("Doe", 4),
+                new Student("Aoe", 1),
+        };
+
+
+//        for (int i = 0; i < students.length-1; i++) {
+//            for (int j = 0; j < students.length-1-i; j++) {
+//                if(students[j].getRollNumber() > students[j+1].getRollNumber()){
+//                    Student temp = students[j];
+//                    students[j] = students[j+1];
+//                    students[j+1] = temp;
+//                }
+//            }
+//        }
+
+//        for (int i = 0; i < students.length-1; i++) {
+//            for (int j = 0; j < students.length-1-i; j++) {
+//                if(students[j].getName().compareTo(students[j+1].getName()) > 0){
+//                    Student temp = students[j];
+//                    students[j] = students[j+1];
+//                    students[j+1] = temp;
+//                }
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(students));
+
+
+
+
 //        Arrays.sort(students, (s1, s2) -> s1.getName().compareTo(s2.getName()));
 //        System.out.println(Arrays.toString(students));
 
@@ -53,6 +175,8 @@ public class ArrayBuiltInMethods {
 //        int[] numbers = {1, 2, 3, 4, 5};
 //        int index = Arrays.binarySearch(numbers, 3);
 //        System.out.println(index);
+
+
 
         // binarySearch primitive array double[]
 //        double[] doubleNumbers = {1.1, 2.2, 3.3, 4.4, 5.5};
@@ -88,6 +212,9 @@ public class ArrayBuiltInMethods {
 //        int index = Arrays.binarySearch(nums, 3);
 //        System.out.println(index);
 
+//        int[] numbers = {1, 2, 3, 4, 5, 6};
+//        int result = binarySearch(numbers, 1);
+//        System.out.println(result);
 
 //        3. equals(): Returns true if the two specified arrays of the same type contain the same elements in the same order.
 
@@ -95,6 +222,11 @@ public class ArrayBuiltInMethods {
 //        int[] numbers1 = {1, 2, 3, 4, 5};
 //        int[] numbers2 = {1, 2, 3, 4, 5};
 //        boolean result = Arrays.equals(numbers1, numbers2);
+//        System.out.println(result);
+
+//        with custom method we can achieve
+
+//        boolean result = isArrayEqual(numbers1, numbers2);
 //        System.out.println(result);
 
         // equals primitive array double[]
