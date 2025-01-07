@@ -20,6 +20,7 @@ public class Array {
 
         // declare and add values
         int[] numbers = {1, 2, 3, 4, 5, 6};
+        System.out.println(Arrays.toString(numbers));
 
         // printing the values with for loop
 

@@ -1,6 +1,4 @@
-package org.example.Challenges;
-
-import java.util.Arrays;
+package org.example.Concepts;
 
 public class StringMethods {
     public static void main(String[] args) {
