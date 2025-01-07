@@ -8,7 +8,7 @@ public interface Payment {
 class CreditCardPayment implements Payment{
     @Override
     public void processPayment(double amount){
-        System.out.println("payment processed successfully" + amount);
+        System.out.println("payment processed successfully: " + amount);
     }
 
     @Override
@@ -20,7 +20,7 @@ class CreditCardPayment implements Payment{
 class UPIPayment implements Payment {
     @Override
     public void processPayment(double amount){
-        System.out.println("Payment of $" + amount+ "processed sucessfully");
+        System.out.println("Payment of $" + amount+ " processed sucessfully");
     }
 
     @Override

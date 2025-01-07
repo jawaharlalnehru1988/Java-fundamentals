@@ -53,6 +53,54 @@ public class BankAccount {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount();
         System.out.println(BankAccount.bankname);
+        System.out.println(bankAccount.balance);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         BankAccount.changeBankName("State Bank");
         System.out.println(BankAccount.bankname);
     }

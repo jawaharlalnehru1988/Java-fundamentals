@@ -1,17 +1,24 @@
 package org.example.OOP.Encapsulation;
 
 public class Book {
-    private String title;
+    public String title;
     private String author;
     private String ISBN;
     private double price;
 
-    public Book(String title, String author, String isbn, double price){
+//    public Book(String title, String author, String isbn, double price){
+//        this.title = title;
+//        this.author = author;
+//        this.ISBN = isbn;
+//        this.price = price;
+//    }
+
+    public Book(String title, String author){
         this.title = title;
         this.author = author;
-        this.ISBN = isbn;
-        this.price = price;
     }
+
+
 
     public String getTitle() {
         return title;

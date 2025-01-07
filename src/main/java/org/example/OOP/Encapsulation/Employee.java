@@ -1,5 +1,7 @@
 package org.example.OOP.Encapsulation;
 
+import java.util.Arrays;
+
 public class Employee {
     private String name;
     private int age;
@@ -41,6 +43,18 @@ public class Employee {
     }
 
     public static void main(String[] args) {
+
+        Book[] books = {
+                new Book("bhagavat", "krishna"),
+                new Book("gita", "krishna"),
+                new Book("bhagavatam", "krishna"),
+                new Book("garuda", "krishna")
+        };
+
+
+        System.out.println(Arrays.toString(books));
+
+
         Employee employee = new Employee();
         try{
             employee.setName("");
