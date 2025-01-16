@@ -2,7 +2,7 @@ package org.example.Lambda;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class FilterLetter {
+public class  FilterLetter {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Hari", "Krishna", "mukunda", "murari", "jagannath", "Achyuth", "Anantha", "Adhi");
 //
@@ -24,18 +24,6 @@ public class FilterLetter {
 //
 //         List<Integer> newNumber = numbers.stream().map(age -> age * age).collect(Collectors.toList());
 //        System.out.println(newNumber);
-//
-//        List<Person> people = Arrays.asList(
-//                new Person("Radhanath", 16),
-//                new Person("Gopinath", 18),
-//                new Person("Tulasi Das", 16),
-//                new Person("Maruthi", 18)
-//        );
-//
-//        Map<Integer, List<Person>> groupedByAge = people.stream().collect(Collectors.groupingBy(Person::getAge));
-//
-//        System.out.println("Grouped By Age");
-//        groupedByAge.forEach((age, group) -> System.out.println(age + "-> " + group.stream().map(Person::printNames).collect(Collectors.toList())));
 
 //        List<Integer> numbers = Arrays.asList(10, 45, 32, 67, 5, 89);
 //        int MaxNum = numbers.stream().max(Integer::compareTo).orElse(Integer.MIN_VALUE);

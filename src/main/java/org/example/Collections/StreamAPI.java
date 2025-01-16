@@ -1,5 +1,8 @@
 package org.example.Collections;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class StreamAPI {
     public static void main(String[] args) {
 
@@ -17,21 +20,27 @@ public class StreamAPI {
 //        System.out.println("Original Array: " + nums.length);
 
         // Printing the values with for loop
-//        Arrays.stream(nums).map(num -> num * 2).forEach(System.out::println);
+//        Arrays.stream(nums).filter(num -> num%2 == 0).forEach(System.out::println);
 
 
         // how to use toArray method
 //        ArrayList<Integer> numList = new ArrayList<>();
 //
 //        for (int num : nums) {
+//            if(num % 2 == 0){
 //            numList.add(num);
+//            }
 //        }
-//
+////
 //        System.out.println(numList);
+//        for (int i = 0; i < 10; i++) {
+//            numList.add(i);
+//        }
 //
 //        Integer[] numArr = numList.toArray(new Integer[0]);
 //
 //        for(Integer num : numArr){
+//            if(num % 3 == 0)
 //            System.out.println(num);
 //        }
 

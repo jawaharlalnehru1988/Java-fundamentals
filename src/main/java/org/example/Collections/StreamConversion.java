@@ -37,8 +37,8 @@ public class StreamConversion {
 //        stream.forEach(System.out::println);
 
         // Convert Stream<Integer> to IntStream
-//        IntStream intStream = Stream.of(1, 2, 3, 4, 5).mapToInt(Integer::intValue);
-//        intStream.forEach(System.out::println);
+        IntStream intStream = Stream.of(1, 2, 3, 4, 5).mapToInt(Integer::intValue);
+        intStream.forEach(System.out::println);
 
 
         //---------------------------------------------------------------------------------------

@@ -9,8 +9,8 @@ public class HashSetting {
         // Create a HashSet
 
 //        HashSet<String> hashSet = new HashSet<>();
-//
-//        // Add elements
+
+        // Add elements
 //        hashSet.add("Java");
 //        hashSet.add("Python");
 //        hashSet.add("JavaScript");
@@ -25,16 +25,31 @@ public class HashSetting {
 //        System.out.println(hashSet);
 
 
-        HashSet<Student> students = new HashSet<>();
+//        HashSet<Student> students = new HashSet<>();
+//
+//        // Add students to HashSet
+//        students.add(new Student( "John", 1));
+//        students.add(new Student("Alice", 2));
+//        students.add(new Student( "John", 1)); // Duplicate based on overridden equals and hashCode
+//
+//        // Print the HashSet
+//        System.out.println(students);
 
-        // Add students to HashSet
-        students.add(new Student( "John", 1));
-        students.add(new Student("Alice", 2));
-        students.add(new Student( "John", 1)); // Duplicate based on overridden equals and hashCode
+        int[] numbers = {1, 4, 2, 5, 3, 1, 4, 3};
+        HashSet<Integer> unique = new HashSet<>();
 
-        // Print the HashSet
-        System.out.println(students);
+        for (int num: numbers){
+            unique.add(num);
+        }
 
+
+//        unique.add(2);
+//        unique.add(4);
+//        unique.add(2);
+//        unique.add(5);
+//        unique.add(4);
+
+        System.out.println(unique);
 
     }
 }

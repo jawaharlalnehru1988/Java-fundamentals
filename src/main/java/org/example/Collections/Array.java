@@ -10,17 +10,22 @@ public class Array {
         // Integer Array
 
         //declare first and add values later
-        int[] nums = new int[5];
-        nums[0] = 1;
-        nums[1] = 2;
-        nums[2] = 3;
-        nums[3] = 4;
-        nums[4] = 5;
+//       int[] nums = new int[5];
+//
+//       nums[0] = 1;
+//       nums[1] = 2;
+//       nums[2] = 3;
+//       nums[3] = 4;
+//       nums[4] = 5;
+
+//        for (int i = 0; i < nums.length; i++) {
+//            nums[i] = (i+1) *2;
+//        }
 
 
         // declare and add values
         int[] numbers = {1, 2, 3, 4, 5, 6};
-        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(numbers));
 
         // printing the values with for loop
 
@@ -40,21 +45,21 @@ public class Array {
 //        System.out.println(Arrays.toString(nums));
 //
 //        // printing the values with Arrays.stream
-//        Arrays.stream(nums).forEach(System.out::println);
+//        Arrays.stream(numbers).forEach(System.out::println);
 
 
 
 //        // Double Array
 //        //declare first and add values later
-        double[] doubleNum = new double[5];
-        doubleNum[0] = 1.1;
-        doubleNum[1] = 2.2;
-        doubleNum[2] = 3.3;
-        doubleNum[3] = 4.4;
-        doubleNum[4] = 5.5;
+//        double[] doubleNum = new double[5];
+//        doubleNum[0] = 1.1;
+//        doubleNum[1] = 2.2;
+//        doubleNum[2] = 3.3;
+//        doubleNum[3] = 4.4;
+//        doubleNum[4] = 5.5;
 //
 //        // declare and add values
-        double[] doubleNumbers = {1.1, 2.2, 3.3, 4.4, 5.5};
+//        double[] doubleNumbers = {1.1, 2.2, 3.3, 4.4, 5.5};
 //
 //        // printing the values with for loop
 //        for (int i = 0; i < doubleNum.length; i++) {

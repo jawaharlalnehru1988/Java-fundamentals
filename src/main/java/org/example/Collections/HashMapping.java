@@ -2,7 +2,10 @@ package org.example.Collections;
 
 import org.example.OOP.Contructor.Student;
 
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 enum Day {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
@@ -20,7 +23,7 @@ public class HashMapping {
 
         //check whether the key is present in the map
 //        Boolean value = map.containsKey("Cherry");
-////        System.out.println(map.containsKey("Cherry"));
+//        System.out.println(map.containsKey("Cherry"));
 //        System.out.println(value);
 //
 //        //check whether the value is present in the map
@@ -59,7 +62,7 @@ public class HashMapping {
 
         // to get all the keys
 //        Set<String> keys = map.keySet();
-//
+////
 //        System.out.println("keys " + keys);
 
 //        for(String key : keys){
@@ -79,9 +82,9 @@ public class HashMapping {
 
         // to get all the entries
 //        Set<Map.Entry<String, Integer>> entries = map.entrySet();
-//
+////
 //        System.out.println("entries " + entries);
-//
+////
 //        for(Map.Entry<String, Integer> entry : entries){
 //            System.out.println(entry.getKey() + ": " + entry.getValue());
 //        }
@@ -144,12 +147,12 @@ public class HashMapping {
 //        System.out.println(fruit);
 
         // HashMap with String keys and String values
-        HashMap<String, String> map2 = new HashMap<>();
-
-        map2.put("A", "Apple");
-        map2.put("B", "Banana");
-        map2.put("C", "Cherry");
-        map2.put("O", "Orange");
+//        HashMap<String, String> map2 = new HashMap<>();
+//
+//        map2.put("A", "Apple");
+//        map2.put("B", "Banana");
+//        map2.put("C", "Cherry");
+//        map2.put("O", "Orange");
 
 //        map2.replaceAll((key, value) -> value + " is a fruit");
 //        System.out.println(map2);

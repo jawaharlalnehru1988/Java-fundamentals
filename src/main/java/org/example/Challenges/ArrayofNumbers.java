@@ -7,19 +7,19 @@ import java.util.stream.Collectors;
 public class ArrayofNumbers {
     // write a method that takes an array of numbers and returns the duplicate values in the array
 // method 1; with nested for loops
-//    public static int[] findDuplicate(int[] numbers) {
-//        int[] duplicates = new int[numbers.length];
-//        int count = 0;
-//        for (int i = 0; i < numbers.length; i++) {
-//            for (int j = i + 1; j < numbers.length; j++) {
-//                if (numbers[i] == numbers[j]) {
-//                    duplicates[count] = numbers[j];
-//                    count++;
-//                }
-//            }
-//        }
-//        return duplicates;
-//    }
+    public static int[] findDuplicate(int[] numbers) {
+        int[] duplicates = new int[numbers.length];
+        int count = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] == numbers[j]) {
+                    duplicates[count] = numbers[j];
+                    count++;
+                }
+            }
+        }
+        return duplicates;
+    }
 
 
 
@@ -40,20 +40,20 @@ public class ArrayofNumbers {
 
         // find duplicates using hash map
 
-//        Map<Integer, Integer> numberCount = new HashMap<>();
-//        for (int number : numbers) {
-//            if (numberCount.containsKey(number)) {
-//                numberCount.put(number, numberCount.get(number) + 1);
-//            } else {
-//                numberCount.put(number, 1);
-//            }
-//        }
+        Map<Integer, Integer> numberCount = new HashMap<>();
+        for (int number : numbers) {
+            if (numberCount.containsKey(number)) {
+                numberCount.put(number, numberCount.get(number) + 1);
+            } else {
+                numberCount.put(number, 1);
+            }
+        }
 //
-//        for(Map.Entry<Integer, Integer> entry : numberCount.entrySet()) {
-//            if (entry.getValue() > 1) {
-//                System.out.println("Duplicate value: " + entry.getKey());
-//            }
-//        }
+        for(Map.Entry<Integer, Integer> entry : numberCount.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.println("Duplicate value: " + entry.getKey());
+            }
+        }
 
         //--------------------------------------------------------------------------------
 
