@@ -9,7 +9,7 @@ This package contains organized, production-grade, and deduplicated coding inter
 | File | Primary Topics & Highlights |
 | :--- | :--- |
 | [`StringChallenges.java`](./StringChallenges.java) | Reverse string, Palindrome, Vowels/Consonants counter, Remove vowels, Longest string, First non-repeating char, Anagrams, Remove duplicate chars, Word counter, Prefix/Suffix/Regex filtering. |
-| [`ArrayChallenges.java`](./ArrayChallenges.java) | Find duplicates (HashSet, Streams, Loops), In-place duplicate removal (Two Pointers), Filter Evens/Odds, Range/Threshold filtering, Min & Max finding, In-place array reversal. |
+| [`ArrayChallenges.java`](./ArrayChallenges.java) | Dual-paradigm solutions (Imperative Loops/Pointers vs Java 8+ Streams) for: Find duplicates (HashSet vs groupingBy), Remove duplicates (LinkedHashSet, Two-Pointers, `distinct()`), Filter Evens/Odds & Partitioning, Range/Threshold filtering, Min/Max (`IntSummaryStatistics`), Reversal (In-Place vs Stream), Sum/Average, Search & Predicate matching. |
 | [`StreamAndFilterChallenges.java`](./StreamAndFilterChallenges.java) | Filter by length range, Clean null/empty/blank strings, Case-insensitive matching, Uppercase & Suffix mapping, Custom & Chained `Predicate<T>` (`and`, `or`, `negate`), `Stream.toList()` vs `Collectors.toList()` mutability caveats. |
 | [`RecursionChallenges.java`](./RecursionChallenges.java) | Factorial, Fibonacci series, Sum of digits, Exponentiation (Standard vs Fast $O(\log N)$), Recursive string reversal. |
 | [`SearchingChallenges.java`](./SearchingChallenges.java) | Linear search on unsorted arrays, Binary search (Iterative and Recursive) on sorted arrays with boundary overflow safety. |
