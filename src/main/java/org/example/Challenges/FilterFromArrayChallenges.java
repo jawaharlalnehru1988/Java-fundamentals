@@ -12,10 +12,7 @@ public class FilterFromArrayChallenges {
     public static List<String> findStringsGreaterThan(String[] strings, int value){
         //edge cases
         if(strings == null) return null;
-
-        return Arrays.stream(strings)
-                .filter(s -> s.length() > value)
-                .collect(Collectors.toList());
+        return Arrays.stream(strings).filter(s -> s.length() > value).collect(Collectors.toList());
     }
 
     // method 2: with for loop
