@@ -17,6 +17,7 @@ This package contains organized, production-grade, and deduplicated coding inter
 | [`ObjectChallenges.java`](./ObjectChallenges.java) | Filtering Person objects by age/salary, Converting List to Map (`Name -> Salary`, `Age -> Person`), `Collectors.groupingBy` on fields, Finding max earner with `maxBy`, Calculating averages. |
 | [`Person.java`](./Person.java) | Reusable POJO model with Lombok (`@Data`, `@NoArgsConstructor`, `@AllArgsConstructor`). |
 | [`TrickyJavaMCQs.md`](./TrickyJavaMCQs.md) | **105 Deep-Dive Tricky Java Interview MCQs**: Testing JVM internals, Integer cache, floating-point NaN quirks, String Pool, Class init order, try/finally behaviors, Generics PECS & type erasure, HashMap treeification & ConcurrentHashMap CAS, Stream laziness & parallel traps, volatile & Java Memory Model. |
+| [`TrickySpringBootMCQs.md`](./TrickySpringBootMCQs.md) | **105 Deep-Dive Tricky Spring Boot MCQs**: Testing Spring Core IoC/DI, CGLIB proxies (`proxyBeanMethods`), Circular dependency defaults, Bean lifecycle callbacks, Autoconfiguration (`AutoConfiguration.imports`), REST & Exception handlers (`@RestControllerAdvice`), JPA/Hibernate N+1 & `@Transactional` self-invocation traps, Spring Security 6 `SecurityFilterChain` & CSRF/CORS, Actuator & Micrometer, Caching & Spring Boot 3 AOT/Virtual Threads. |
 
 ---
 
