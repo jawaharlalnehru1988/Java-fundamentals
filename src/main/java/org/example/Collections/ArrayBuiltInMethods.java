@@ -1,6 +1,6 @@
 package org.example.Collections;
 
-import org.example.OOP.Contructor.Student;
+import org.example.OOP.Constructors.Student;
 
 import java.util.Arrays;
 import java.util.Comparator;
