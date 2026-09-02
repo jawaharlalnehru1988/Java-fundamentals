@@ -37,11 +37,13 @@ org.example.OOP
 ├── 📂 Interfaces/                         # Module 8: Multi-Cloud Object Storage (S3/Azure/GCS) & Auditing
 │   └── InterfacesDemo.java
 │
-├── 📂 AssociationCompositionAggregation/  # Module 9: Kubernetes Microservices & API Gateway Cluster
-│   └── AssociationDemo.java
+├── 📂 Composition/                        # Dedicated Module: Enterprise Order, Items & Payment Composition
+│   └── CompositionDemo.java
 │
-└── 📂 Composition/                        # Dedicated Module: Enterprise Order, Items & Payment Composition
-    └── CompositionDemo.java
+├── 📂 Enums/                              # Dedicated Module: Advanced Java Enums, Strategy Pattern & State Machine
+│   └── EnumDemo.java
+│
+└── 📄 OOPCommonMCQs.md                    # 100 Common, Non-Tricky OOP Interview MCQs & Explanations
 ```
 
 ---
@@ -187,6 +189,18 @@ org.example.OOP
 - **Execution Command**:
   ```bash
   java -cp target/classes org.example.OOP.Composition.CompositionDemo
+### Dedicated Module: Advanced Java Enums & Patterns (`Enums/`)
+- **Enterprise Domain**: **HTTP Gateway Codes, Payment Strategy Tiers & Finite State Machine (FSM)**
+- **Core Concepts**:
+  - Enums with Custom Fields, Constructors, and static lookup methods (`HttpStatus`).
+  - Enums with Abstract Methods implementing constant-specific Strategy Patterns (`PaymentProcessingTier`).
+  - Enums implementing Interfaces (`CloudStorageTier implements BillableStorageTier`).
+  - Enums as a Finite State Machine with transition validation guards (`OrderState`).
+  - High-performance `EnumSet` (bitmask) and `EnumMap` (array-backed O(1) map).
+- **Demo Runner**: [`EnumDemo.java`](./Enums/EnumDemo.java)
+- **Execution Command**:
+  ```bash
+  java -cp target/classes org.example.OOP.Enums.EnumDemo
   ```
 
 ---
@@ -237,4 +251,7 @@ java -cp target/classes org.example.OOP.AssociationCompositionAggregation.Associ
 
 # Dedicated: Composition
 java -cp target/classes org.example.OOP.Composition.CompositionDemo
+
+# Dedicated: Enums & Design Patterns
+java -cp target/classes org.example.OOP.Enums.EnumDemo
 ```
